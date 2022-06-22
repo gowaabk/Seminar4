@@ -2,34 +2,19 @@
     3 -> Среда 
 5 -> Пятница */
 
-Console.Write("Введите число от 1 до 7 ");
-int numA = int.Parse(Console.ReadLine()); // Преобразует ввведенну строку в число.
-
-if (numA == 1)
+Console.Write("Введите День от 1 до 7 ");
+int dayNum = int.Parse(Console.ReadLine()); // Преобразует ввведенну строку в число.
+if (dayNum > 1 && dayNum < 7)
 {
-    Console.Write($" {numA} - это Понедельник ");
+    if (dayNum == 1) Console.Write($" {dayNum} - это Понедельник ");
+    if (dayNum == 2) Console.Write($" {dayNum} - это Вторник ");
+    if (dayNum == 3) Console.Write($" {dayNum} - это Среда ");
+    if (dayNum == 4) Console.Write($" {dayNum} - это Четверг ");
+    if (dayNum == 5) Console.Write($" {dayNum} - это Пятница ");
+    if (dayNum == 6) Console.Write($" {dayNum} - это Суббота ");
+    if (dayNum == 7) Console.Write($" {dayNum} - это Воскресение ");
 }
-if (numA == 2)
+else
 {
-    Console.Write($" {numA} - это Вторник ");
-}
-if (numA == 3)
-{
-    Console.Write($" {numA} - это Среда ");
-}
-if (numA == 4)
-{
-    Console.Write($" {numA} - это Четверг ");
-}
-if (numA == 5)
-{
-    Console.Write($" {numA} - это Пятница ");
-}
-if (numA == 6)
-{
-    Console.Write($" {numA} - это Суббота ");
-}
-if (numA == 7)
-{
-    Console.Write($" {numA} - это Воскресение ");
+    Console.WriteLine("It is Bad day Daddy!");
 }
